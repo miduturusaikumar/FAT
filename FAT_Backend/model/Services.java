@@ -8,13 +8,13 @@ public class Services {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="service_id",nullable = false)
+    @Column(name="service_id")
     private Integer service_id;
 
-    @Column(name="service_category",nullable = false)
+    @Column(name="service_category")
     private String Service_category;
 
-    @Column(name="description",nullable = false)
+    @Column(name="description")
     private String description;
 
     public Services(Integer service_id, String service_category, String description) {
